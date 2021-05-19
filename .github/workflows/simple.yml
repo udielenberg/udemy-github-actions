@@ -12,6 +12,11 @@ jobs:
               run: |
                   node -v
                   npm -v
+
+    run-python-commands:
+        needs: ["run-shell-command"]
+        runs-on: ubuntu-latest
+        steps:
             - name: Python command
               run: |
                   import platform
