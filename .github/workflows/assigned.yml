@@ -1,0 +1,11 @@
+name: Assigning user
+on:
+    pull_request:
+        types: [assigned]
+
+jobs:
+    echo-something:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echoing
+              run: echo "${{assigner}}"
