@@ -8,4 +8,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Echoing
-              run: echo "${{assigner}}"
+              run: echo "${{assigner}}!"
