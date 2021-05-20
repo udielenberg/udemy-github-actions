@@ -6,6 +6,8 @@ jobs:
     run-simple-action:
         runs-on: ubuntu-latest
         steps:
+            - name: List files
+              run: pwd
             - name: Simple JS Action
               id: greet
               uses: actions/hello-world-javascript-action@v1
